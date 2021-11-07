@@ -1,0 +1,92 @@
+body {
+    background-image: url("../Aufgabe_3/images/bg_3.png");
+}
+
+#Karte {
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    left: 470px;
+    }
+
+.Uberschrift {
+        position:absolute;
+        left: 510px;
+        top: 228px;
+        color: white;
+}
+
+.Stern1 {
+    position:absolute;
+    left: 510px;
+    top: 400px;
+}
+
+.Stern1:hover {
+    content: url("../Aufgabe_3/images/stern_hover.png")
+}
+
+.Stern2 {
+    position:absolute;
+    left: 620px;
+    top: 330px;
+}
+
+.Stern2:hover {
+    content: url("../Aufgabe_3/images/stern_hover.png")
+}
+
+.Stern3 {
+    position:absolute;
+    left: 720px;
+    top: 460px;
+}
+
+.Stern3:hover {
+    content: url("../Aufgabe_3/images/stern_hover.png")
+}
+
+.Stern4 {
+    position:absolute;
+    left: 885px;
+    top: 390px;
+}
+
+.Stern4:hover {
+    content: url("../Aufgabe_3/images/stern_hover.png")
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: rgba(41,51,120,255);
+    border: 1px solid rgba(41,51,120,255);
+    border-radius: 25px;
+}
+li {
+    border-bottom: 1px solid rgba(41,51,120,255);
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.active {
+     color: gold;
+}
+
+a:hover {
+    background-color: rgba(41,51,120,255);
+    color: gold;
+}

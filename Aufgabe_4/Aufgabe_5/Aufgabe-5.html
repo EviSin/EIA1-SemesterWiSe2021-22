@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet_5.css">
+    <title>Aufgabe 5</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="../Aufgabe_1/Aufgabe-1.html">1</a></li>
+                <li><a href="../Aufgabe_3/Aufgabe-3.html">3</a></li>
+                <li><a class="active" href="../Aufgabe_5/Aufgabe-5.html">5</a></li>
+                <li><a href="../Aufgabe_8/Aufgabe-8.html">8</a></li>
+                <li><a href="../Aufgabe_9/Aufgabe-9.html">9</a></li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+            <div id="Karte">
+                <img src="../Aufgabe_5/images/wrapperbg.png">
+            </div>
+            <div class="Uberschrift">
+                <h1>Formular</h1>
+            </div>
+            <div id="Box">
+            <form method="post">
+                <p>Dein Name:<br />
+               <input type="text" name="Dein Name" placeholder="" required> <br /></p>
+               <p>Deine Nachricht an den Weihnachtsmann:<br />
+                <textarea rows="2" name="nachricht" placeholder="" required></textarea></p>
+                <p>Willst du auch ein Geschenk? <br />
+                <input type="radio" id="Geschenkja"
+                  name="contact" value="ja">
+                <label for="Geschenkja">ja</label>
+                <input type="radio" id="Geschenknein"
+                 name="contact" value="nein">
+                <label for="contactChoice2">nein</label>
+            </p>
+                <button type="submit">abschicken</button>
+                </form>
+            </div>
+        </main>
+</body>
+</html>

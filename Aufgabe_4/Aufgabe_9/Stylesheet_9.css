@@ -1,0 +1,116 @@
+body {
+    background-image: url("../Aufgabe_9/images/bg.png");
+}
+
+#Karte {
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    transform: none;
+    left: 470px;
+    }
+
+#Schleife {
+    position: absolute;
+    left: 845px;
+    top: 460px;
+    z-index: 10;
+}
+.Video {
+    position: absolute;
+    left: 510px;
+    top: 225px;
+}
+.Uberschrift {
+    position:absolute;
+    left: 530px;
+    top: 220px;
+    color: white;
+}
+.Text {
+    position:absolute;
+    left: 530px;
+    top: 335px;
+    color: white;
+    z-index: 10;
+}
+
+#Schnee1 {
+    position: absolute;
+    left: 510px;
+    top: 280px;
+    animation-name: snow1;
+    animation-duration: 8s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snow1 {
+    0% {left:510px; top:280px;}
+    100% {left:510px; top:530px;}
+}
+
+#Schnee2 {
+    position: absolute;
+    left: 800px;
+    top: 240px;
+    animation-name: snow2;
+    animation-duration: 6s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snow2 {
+    0% {left:800px; top:240px;}
+    100% {left:800px; top:510px;}
+}
+
+#Schnee3 {
+    left: 910px;
+    top: 325px;
+    position: absolute;
+    animation-name: snow3;
+    animation-duration: 7s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snow3 {
+    0% {left:910px; top:325px;}
+    100% {left:910px; top:530px;}
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: rgb(224, 42, 42);
+    border: 1px solid rgb(224, 42, 42);
+    border-radius: 25px;
+}
+li {
+    border-bottom: 1px solid rgb(224, 42, 42);
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.active {
+     color: gold;
+}
+
+a:hover {
+    background-color: rgb(224, 42, 42);
+    color: gold;
+}

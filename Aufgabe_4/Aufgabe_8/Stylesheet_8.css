@@ -1,0 +1,57 @@
+body {
+    background-image: url("../Aufgabe_8/images/bg.png");
+}
+
+#Karte {
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    transform: none;
+    left: 470px;
+    }
+
+#Schleife {
+    position: absolute;
+    left: 845px;
+    top: 460px;
+    z-index: 10;
+}
+.Video {
+    position: absolute;
+    left: 510px;
+    top: 225px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: rgb(224, 42, 42);
+    border: 1px solid rgb(224, 42, 42);
+    border-radius: 25px;
+}
+li {
+    border-bottom: 1px solid rgb(224, 42, 42);
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.active {
+     color: gold;
+}
+
+a:hover {
+    background-color: rgb(224, 42, 42);
+    color: gold;
+}
