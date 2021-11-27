@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+}
+
+.blue1 {
+background: linear-gradient(to bottom, #3888e4, #174288);
+position: absolute;
+border: none;
+padding: 20px;
+width: 150px;
+height: 150px;
+left: 540px;
+top: 20px;
+border-radius: 10px;
+}
+
+.blue2 {
+    background: linear-gradient(to bottom, #3888e4, #174288);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 695px;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.blue3 {
+    background: linear-gradient(to bottom, #3888e4, #174288);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.red1 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 540px;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.red2 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 695px;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.red3 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.red4 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 540px;
+    top: 330px;
+    border-radius: 10px;
+}
+
+.yellow1 {
+    background: linear-gradient(to bottom,  #f39f38, #cc6e0b);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 695px;
+    top: 330px;
+    border-radius: 10px;
+}
+
+.yellow2 {
+    background: linear-gradient(to bottom,  #f39f38, #cc6e0b);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    top: 330px;
+    border-radius: 10px;
+}
+
+.playbutton {
+    position: absolute;
+    left: 695px;
+    top: 500px;
+}
