@@ -1,0 +1,66 @@
+body {
+    background-image: url("../Aufgabe_1/images/bg.png");
+}
+#Karte {
+position: absolute;
+text-align: center;
+top: 190px;
+left: 468px;
+}
+.Pinguin {
+    position: absolute;
+    left: 935px;
+    top: 405px;
+}
+#Busch {
+    position: absolute;
+    left: 398px;
+    top: 130px;
+    z-index: 10;
+}
+.Uberschrift {
+    position:absolute;
+    left: 530px;
+    top: 228px;
+    color: white;
+}
+.Text {
+    position:absolute;
+    left: 530px;
+    top: 365px;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: rgb(224, 42, 42);
+    border: 1px solid rgb(224, 42, 42);
+    border-radius: 25px;
+}
+li {
+    border-bottom: 1px solid rgb(224, 42, 42);
+    float: left;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.active {
+     color: lightgreen;
+}
+
+a:hover {
+    background-color: rgb(224, 42, 42);
+    color: lightgreen;
+}
