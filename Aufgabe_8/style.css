@@ -1,0 +1,197 @@
+html, body {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.blue1 {
+background: linear-gradient(to bottom, #3888e4, #174288);
+position: absolute;
+border: none;
+padding: 20px;
+width: 150px;
+height: 150px;
+left: 540px;
+top: 20px;
+border-radius: 10px;
+}
+
+.blue1:hover{
+    opacity: 40%;
+}
+
+.blue2 {
+    background: linear-gradient(to bottom, #3888e4, #174288);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 695px;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.blue2:hover{
+    opacity: 40%;
+}
+
+.blue3 {
+    background: linear-gradient(to bottom, #3888e4, #174288);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.blue3:hover{
+    opacity: 40%;
+}
+
+.red1 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 540px;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.red1:hover{
+    opacity: 40%;
+}
+
+.red2 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 695px;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.red2:hover{
+    opacity: 40%;
+}
+
+.red3 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    top: 175px;
+    border-radius: 10px;
+}
+
+.red3:hover{
+    opacity: 40%;
+}
+
+.red4 {
+    background: linear-gradient(to bottom, #ff52ac, #da147a);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 540px;
+    top: 330px;
+    border-radius: 10px;
+}
+
+.red4:hover{
+    opacity: 40%;
+}
+
+.yellow1 {
+    background: linear-gradient(to bottom,  #f39f38, #cc6e0b);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 695px;
+    top: 330px;
+    border-radius: 10px;
+}
+
+.yellow1:hover{
+    opacity: 40%;
+}
+
+.yellow2 {
+    background: linear-gradient(to bottom,  #f39f38, #cc6e0b);
+    position: absolute;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    top: 330px;
+    border-radius: 10px;
+}
+
+.yellow2:hover{
+    opacity: 40%;
+}
+
+.playbutton {
+    position: absolute;
+    left: 695px;
+    top: 500px;
+}
+
+.playbutton:hover {
+    opacity: 40%;
+}
+
+.areaofbutton {
+    position: absolute;
+    left: 668px;
+    top: 550px;
+}
+
+#playbutton {
+    position: absolute;
+    color: #174288;
+    font-size: 50px;
+}
+
+#random {
+    position: absolute;
+    color: #da147a;
+    font-size: 50px;
+    left: 80px;
+}
+
+#trash {
+    position: absolute;
+    color: #cc6e0b;
+    font-size: 50px;
+    left: 170px;
+}
+
+#playbutton:hover{
+    opacity: 60%;
+}
+
+#random:hover {
+    opacity: 60%;
+}
+
+#trash:hover{
+    opacity: 60%;
+}
