@@ -1,0 +1,123 @@
+body {
+    background-color: #d7d7d7;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    font-size: 80px;
+    left: 550px;
+    position: absolute;
+}
+
+h2 {
+    font-size: 30px;
+    position: absolute;
+    left: 530px;
+    top: 170px;
+}
+
+h3 {
+    font-size: 20px;
+    position: absolute;
+    left: 640px;
+    top: 230px;
+}
+
+#line{
+    position: absolute;
+    width: 495px;
+    height: 50px;
+    left: 500px;
+    border: none;
+    top: 300px;
+    font-size: 25px;
+}
+
+#plus {
+    left: 950px;
+    position: absolute;
+    height: 52px;
+    width: 50px;
+    top: 300px;
+}
+
+#todo-input {
+    margin-top: 25px;
+    color:black;
+    position: absolute;
+    top: 500px;
+}
+
+.inputGroup {
+    position: relative;
+}
+
+#todo-container {
+    position: absolute;
+    width: 500px;
+    height: 23px;
+    left: 508px;
+    top: 361px;
+}
+
+/* Icon Plus */
+.fa-plus-circle {
+    font-size: 30px;
+    border: none;
+    background-color: #ffffff;
+}
+
+/* Mülleimer Button */
+.trash {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: rgb(78, 32, 32);
+    cursor: pointer;
+}
+
+/* Icon Mülleimer */
+.fa-trash-alt {
+    font-size: 30px;
+    opacity: 0%;
+}
+
+.fa-trash-alt:hover {
+    opacity: 100%;
+    color: #7e7e7e;
+}
+
+/* Neues DIV */
+.todo {
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+    padding: 20px 50px;
+    background: white;
+    border-bottom: 1px solid grey;
+}
+
+/* Kreis des Häkchen */
+.check {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    border: 1px solid rgb(78, 32, 32);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+/* Häkchen */
+.check i {
+    position: relative;
+    left: 8px;
+    top: 6px;
+}
+
+/* Verschwinden von Häkchen nach Doppelklick*/
+.check.false i {
+    display: none;
+}
