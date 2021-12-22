@@ -111,19 +111,20 @@ function addTodo(): void {
 )
 /* Funktion des Mikrofons */
 
-window.addEventListener("load", function(): void {
-    const artyom = new Artyom();
+const artyom = new Artyom();
+
     artyom.addCommands({
         indexes: ["erstelle Aufgabe *"],
         smart: true,
         action: function(i: any, wildcard: string): void {
             console.log( "Neue Aufgabe:" + wildcard);
-            /*Nach Aufnahme wird das Gesprochene wiedergegeben */
             ToDoInput.value = wildcard;
             /* Funktion fügt das Gesprochene in die ToDo */
             addTodo();
         }
     });
+
+/*Funktion des Aufnehmens */
 
     function startContinuousArtyom() {
         artyom.fatality();
@@ -140,7 +141,7 @@ window.addEventListener("load", function(): void {
         }, 150);
     }
     startContinuousArtyom();
-});
+};
 }
 
-})}
+)}

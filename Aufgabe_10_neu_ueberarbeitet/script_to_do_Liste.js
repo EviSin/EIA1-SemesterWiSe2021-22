@@ -87,36 +87,35 @@ var Aufgabe_9;
                 }
             });
             /* Funktion des Mikrofons */
-            window.addEventListener("load", function () {
-                const artyom = new Artyom();
-                artyom.addCommands({
-                    indexes: ["erstelle Aufgabe *"],
-                    smart: true,
-                    action: function (i, wildcard) {
-                        console.log("Neue Aufgabe:" + wildcard);
-                        /*Nach Aufnahme wird das Gesprochene wiedergegeben */
-                        ToDoInput.value = wildcard;
-                        /* Funktion fügt das Gesprochene in die ToDo */
-                        addTodo();
-                    }
-                });
-                function startContinuousArtyom() {
-                    artyom.fatality();
-                    setTimeout(function () {
-                        artyom.initialize({
-                            lang: "de-DE",
-                            continuous: true,
-                            listen: true,
-                            interimResults: true,
-                            debug: true
-                        }).then(function () {
-                            console.log("Ready!");
-                        });
-                    }, 150);
+            const artyom = new Artyom();
+            artyom.addCommands({
+                indexes: ["erstelle Aufgabe *"],
+                smart: true,
+                action: function (i, wildcard) {
+                    console.log("Neue Aufgabe:" + wildcard);
+                    ToDoInput.value = wildcard;
+                    /* Funktion fügt das Gesprochene in die ToDo */
+                    addTodo();
                 }
-                startContinuousArtyom();
             });
+            /*Funktion des Aufnehmens */
+            function startContinuousArtyom() {
+                artyom.fatality();
+                setTimeout(function () {
+                    artyom.initialize({
+                        lang: "de-DE",
+                        continuous: true,
+                        listen: true,
+                        interimResults: true,
+                        debug: true
+                    }).then(function () {
+                        console.log("Ready!");
+                    });
+                }, 150);
+            }
+            startContinuousArtyom();
         }
+        ;
     });
 })(Aufgabe_9 || (Aufgabe_9 = {}));
 //# sourceMappingURL=script_to_do_Liste.js.map
