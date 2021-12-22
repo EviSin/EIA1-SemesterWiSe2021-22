@@ -1,5 +1,5 @@
-var Aufgabe_9;
-(function (Aufgabe_9) {
+var Aufgabe_10;
+(function (Aufgabe_10) {
     window.addEventListener("load", function () {
         /*Variablen*/
         let ToDoInput = document.getElementById("line");
@@ -48,7 +48,7 @@ var Aufgabe_9;
             todoList.appendChild(todoDiv);
             /* Inhalt des Inlines löschen, nachdem eine ToDo eingetragen wurde*/
             ToDoInput.value = "";
-            /* Counter zählt das Hinzufügen einer neuen ToDo + zählt das ToDo zu "open" */
+            /* Counter zählt das Hinzufügen einer neuen ToDo + zählt das ToDo zu "open" + Counter "done" zählt nicht mit*/
             count++;
             counter1();
             count2++;
@@ -86,36 +86,35 @@ var Aufgabe_9;
                     document.querySelector("#counter3").innerHTML = count3 + "";
                 }
             });
-            /* Funktion des Mikrofons */
-            const artyom = new Artyom();
-            artyom.addCommands({
-                indexes: ["erstelle Aufgabe *"],
-                smart: true,
-                action: function (i, wildcard) {
-                    console.log("Neue Aufgabe:" + wildcard);
-                    ToDoInput.value = wildcard;
-                    /* Funktion fügt das Gesprochene in die ToDo */
-                    addTodo();
-                }
-            });
-            /*Funktion des Aufnehmens */
-            function startContinuousArtyom() {
-                artyom.fatality();
-                setTimeout(function () {
-                    artyom.initialize({
-                        lang: "de-DE",
-                        continuous: true,
-                        listen: true,
-                        interimResults: true,
-                        debug: true
-                    }).then(function () {
-                        console.log("Ready!");
-                    });
-                }, 150);
-            }
-            startContinuousArtyom();
         }
-        ;
+        /* Funktion des Mikrofons */
+        var artyom = new Artyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function (i, wildcard) {
+                console.log("Neue Aufgabe:" + wildcard);
+                ToDoInput.value = wildcard;
+                /* Funktion fügt das Gesprochene in die ToDo */
+                addTodo();
+            }
+        });
+        /*Funktion des Aufnehmens */
+        function startContinuousArtyom() {
+            artyom.fatality();
+            setTimeout(function () {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function () {
+                    console.log("Ready!");
+                });
+            }, 150);
+        }
+        startContinuousArtyom();
     });
-})(Aufgabe_9 || (Aufgabe_9 = {}));
+})(Aufgabe_10 || (Aufgabe_10 = {}));
 //# sourceMappingURL=script_to_do_Liste.js.map
