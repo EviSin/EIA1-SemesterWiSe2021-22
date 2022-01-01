@@ -53,8 +53,6 @@ var Aufgabe_10;
             counter1();
             count2++;
             counter2();
-            count3;
-            counter3();
             /* Funktion des Mülleimer Buttons */
             trashButton.addEventListener("click", function () {
                 todoList.removeChild(todoDiv);
