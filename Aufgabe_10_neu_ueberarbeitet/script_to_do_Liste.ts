@@ -68,8 +68,6 @@ namespace Aufgabe_10 {
             counter1();
             count2++;
             counter2();
-            count3;
-            counter3();
 
             /* Funktion des Mülleimer Buttons */
 
